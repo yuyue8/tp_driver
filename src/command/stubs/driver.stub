@@ -15,7 +15,7 @@ class {%className%} extends BaseManager
      * 空间名
      * @var string
      */
-    protected $namespace = '\\data\\service\\{%name%}\\storage\\';
+    protected $namespace = '\\{%namespace2%}\\storage\\';
 
     /**
      * 设置默认
