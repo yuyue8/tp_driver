@@ -1,0 +1,14 @@
+<?php
+
+return [
+    //默认模式
+    'default' => 'example',
+    //驱动模式
+    'stores' => [
+        //示例
+        'example' => [
+            'account'  => '',
+            'password' => '',
+        ],
+    ]
+];

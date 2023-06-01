@@ -1,0 +1,28 @@
+<?php
+namespace {%namespace%};
+
+use Yuyue8\TpDriver\basic\BaseManager;
+use think\facade\Config;
+
+/**
+ * Class {%className%}
+ * @package {%namespace%}
+ */
+class {%className%} extends BaseManager
+{
+
+    /**
+     * 空间名
+     * @var string
+     */
+    protected $namespace = '\\data\\service\\{%name%}\\storage\\';
+
+    /**
+     * 设置默认
+     * @return mixed
+     */
+    protected function getDefaultDriver()
+    {
+        return Config::get('{%name%}.default', '');
+    }
+}
